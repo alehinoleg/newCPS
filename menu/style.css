@@ -31,7 +31,7 @@ body {
     box-shadow: 15px 0 25px 0 #bbbbbb;
     width: 320px;
     height: 100vh;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
     display: flex;
     flex-direction: column;
 }
