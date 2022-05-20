@@ -30,7 +30,10 @@ body {
 .shadow {
     box-shadow: 15px 0 25px 0 #bbbbbb;
     width: 320px;
+    height: 100vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__button,
@@ -75,13 +78,16 @@ body {
     transition-duration: 200ms;
 }
 
+.main {
+    flex-grow: 1;
+}
+
 .main-menu {
     margin: 0;
     padding: 0;
     list-style: none;
     width: 320px;
     position: relative;
-    margin-bottom: 210px;
     /*border: 1px solid black;*/
 }
 
