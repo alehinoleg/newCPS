@@ -231,6 +231,17 @@ a {
         width: 180px;
     }
 
+    .social-block::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        background-color: #EAEAEA;
+        border-radius: 3px;
+        vertical-align: middle;
+        margin-top: 4px;
+    }
+
     .header__wraper {
         width: 214px;
     }
