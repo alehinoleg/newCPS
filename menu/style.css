@@ -102,10 +102,12 @@ body {
     text-decoration: none;
     padding: 16px 24px;
     color: #1B1C21;
+    transition-duration: 2s;
 }
 
 .main-menu__link:hover {
     background-color: #d4d7d7;
+    transition-duration: 0.5s;
 }
 
 .active {
