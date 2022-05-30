@@ -167,6 +167,18 @@ a {
     background: url('./img/icon-down.svg') no-repeat;
 }
 
+.swiper-button-close::before {
+    content: "";
+    height: 17px;
+    width: 24px;
+    display: inline-block;
+    background: url('./img/expand.svg') no-repeat; 
+}
+
+.swiper-button-close {
+    display: none;
+}
+
 .button-readmore:hover {
     color: #5d5e61;
     background-color: white;
@@ -339,3 +351,109 @@ a {
     }
 }
 
+.swiper {
+    margin: 0 20px;
+}
+
+.swiper__title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+.swiper-slide {
+    height: 72px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-slide__logo {
+    margin-left: 15px;
+}
+
+.swiper-slide a {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    transition-duration: 0.5s;
+}
+
+.swiper-slide a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 17px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC; 
+}
+
+.swiper-wrapper-button{
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 165px;
+    }
+
+    .swiper-slide {
+        width: 31%;
+        margin-right: 3%;
+        margin-bottom: 17px;
+    }
+
+    .swiper-slide:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .swiper-wrapper-button {
+        display: inline-block;
+    }
+    
+}
+
+@media (min-width: 1120px) {
+    .swiper {
+        width: 1085px;
+        margin: 0 auto;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 165px;
+    }
+
+    .swiper-slide {
+        width: 245px;
+        margin-right: 32px;
+        margin-bottom: 17px;
+    }
+
+    .swiper-slide:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .swiper-wrapper-button {
+        width: 1120px;
+        margin: 0 auto;
+        display: block;
+    }
+}
